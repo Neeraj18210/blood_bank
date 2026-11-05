@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Neeraj Blood Bank</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+
+  <header class="header">
+
+    <div class="container nav">
+
+      <a href="#" class="logo" onclick="showPage('home')">
+        <span class="logo-icon">♥</span>
+        <span>Neeraj Blood Bank</span>
+      </a>
+
+      <nav>
+        <a href="#" onclick="showPage('home')">Home</a>
+        <a href="#" onclick="showPage('about')">About Us</a>
+        <a href="#" onclick="showPage('availability')">Blood Stock</a>
+        <a href="#" onclick="showPage('donors')">Donors</a>
+        <a href="#" onclick="showPage('donate')">Donate</a>
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- ================= HOME ================= -->
+
+  <main id="home" class="page">
+
+    <section class="hero">
+
+      <div class="container hero-content">
+
+        <p class="eyebrow">SAVE LIVES • DONATE BLOOD</p>
+
+        <h1>
+          Every drop can make
+          <span>a difference.</span>
+        </h1>
+
+        <p class="hero-text">
+          Connecting voluntary blood donors with patients in need.
+          Safe collection, tested storage and reliable emergency supply.
+        </p>
+
+        <div class="hero-buttons">
+
+          <button class="btn btn-primary" onclick="showPage('donate')">
+            Become a Donor
+          </button>
+
+          <button class="btn btn-outline" onclick="showPage('availability')">
+            Check Blood Stock
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="stats-section">
+
+      <div class="container stats">
+
+        <div class="stat-card">
+          <h2>295</h2>
+          <p>Blood Units</p>
+        </div>
+
+        <div class="stat-card">
+          <h2>38</h2>
+          <p>Partner Hospitals</p>
+        </div>
+
+        <div class="stat-card">
+          <h2>165</h2>
+          <p>Donation Camps</p>
+        </div>
+
+        <div class="stat-card">
+          <h2>24×7</h2>
+          <p>Emergency Support</p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="section">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p class="eyebrow dark">OUR SERVICES</p>
+
+          <h2>Blood when it matters most</h2>
+
+          <p>
+            Our system makes it easier to find donors, check stock
+            and request blood during emergencies.
+          </p>
+
+        </div>
+
+
+        <div class="cards three">
+
+          <div class="card">
+
+            <div class="card-icon">🩸</div>
+
+            <h3>Blood Availability</h3>
+
+            <p>
+              Check current blood stock across all eight blood groups.
+            </p>
+
+            <button class="text-button" onclick="showPage('availability')">
+              View Stock →
+            </button>
+
+          </div>
+
+
+          <div class="card">
+
+            <div class="card-icon">👥</div>
+
+            <h3>Donor Directory</h3>
+
+            <p>
+              Search our voluntary donor registry by city and blood group.
+            </p>
+
+            <button class="text-button" onclick="showPage('donors')">
+              Find Donors →
+            </button>
+
+          </div>
+
+
+          <div class="card">
+
+            <div class="card-icon"></div>
+
+            <h3>Request Blood</h3>
+
+            <p>
+              Register your requirement and our team will coordinate with you.
+            </p>
+
+            <button class="text-button" onclick="showPage('donate')">
+              Register →
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= ABOUT ================= -->
+
+  <main id="about" class="page hidden">
+
+    <section class="page-header">
+
+      <div class="container">
+
+        <p class="eyebrow">WHO WE ARE</p>
+
+        <h1>
+          A student-built blood bank management system
+          for a real community need
+        </h1>
+
+        <p>
+          Neeraj Blood Bank was created to make blood availability
+          easier to manage during emergencies.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <section class="section">
+
+      <div class="container two-column">
+
+        <div>
+
+          <h2>Our mission</h2>
+
+          <p>
+            To make safe blood reachable to every patient,
+            irrespective of their ability to pay.
+          </p>
+
+          <p>
+            The management system digitises donor records,
+            stock levels, blood requests and issue information,
+            reducing dependence on paper records.
+          </p>
+
+        </div>
+
+
+        <div class="cards two">
+
+          <div class="card">
+            <h2 class="red-number">2019</h2>
+            <p>Established</p>
+          </div>
+
+          <div class="card">
+            <h2 class="red-number">38</h2>
+            <p>Partner hospitals</p>
+          </div>
+
+          <div class="card">
+            <h2 class="red-number">165</h2>
+            <p>Camps conducted</p>
+          </div>
+
+          <div class="card">
+            <h2 class="red-number">100%</h2>
+            <p>Units screened</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="soft-section">
+
+      <div class="container">
+
+        <h2>From vein to vein</h2>
+
+        <p>
+          The four stages every donated unit passes through.
+        </p>
+
+
+        <div class="cards four">
+
+          <div class="card">
+            <div class="card-icon">✓</div>
+            <h3>Donor Screening</h3>
+            <p>
+              Haemoglobin, blood pressure, weight and medical history
+              are checked before donation.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">🧪</div>
+            <h3>Laboratory Testing</h3>
+            <p>
+              Every unit is tested before it is released for use.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">❄</div>
+            <h3>Controlled Storage</h3>
+            <p>
+              Blood components are stored under controlled conditions.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">🚚</div>
+            <h3>Rapid Dispatch</h3>
+            <p>
+              Approved blood requests are prepared for hospital delivery.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="section">
+
+      <div class="container">
+
+        <h2>The team</h2>
+
+        <div class="cards three">
+
+          <div class="card team-card">
+            <div class="avatar">D</div>
+            <h3>Dr. P. Anitha</h3>
+            <p>Chief Medical Officer</p>
+          </div>
+
+          <div class="card team-card">
+            <div class="avatar">C</div>
+            <h3>Chenna Neeraj</h3>
+            <p>Founder & Systems Lead</p>
+          </div>
+
+          <div class="card team-card">
+            <div class="avatar">S</div>
+            <h3>S. Ramesh Babu</h3>
+            <p>Lab & Quality Head</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= AVAILABILITY ================= -->
+
+  <main id="availability" class="page hidden">
+
+    <section class="page-header">
+
+      <div class="container">
+
+        <p class="eyebrow">INVENTORY</p>
+
+        <h1>Live blood stock</h1>
+
+        <p id="stock-description">
+          Tested units currently available in storage.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <section class="section">
+
+      <div class="container">
+
+        <div class="table-container">
+
+          <table>
+
+            <thead>
+
+              <tr>
+                <th>Blood Group</th>
+                <th>Units</th>
+                <th>Level</th>
+                <th>Status</th>
+                <th>Last Updated</th>
+              </tr>
+
+            </thead>
+
+            <tbody id="stock-table"></tbody>
+
+          </table>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="soft-section">
+
+      <div class="container">
+
+        <h2>Compatibility checker</h2>
+
+        <p>
+          Select a blood group to see who it can receive from
+          and donate to.
+        </p>
+
+
+        <div id="blood-buttons" class="blood-buttons"></div>
+
+
+        <div class="cards two compatibility-cards">
+
+          <div class="card">
+
+            <h3>Can receive from</h3>
+
+            <p id="receive-result" class="compatibility-result">
+              O+, O-
+            </p>
+
+          </div>
+
+
+          <div class="card">
+
+            <h3>Can donate to</h3>
+
+            <p id="donate-result" class="compatibility-result">
+              O+, A+, B+, AB+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= DONORS ================= -->
+
+  <main id="donors" class="page hidden">
+
+    <section class="page-header">
+
+      <div class="container">
+
+        <p class="eyebrow">REGISTRY</p>
+
+        <h1>Donor directory</h1>
+
+        <p>
+          Search voluntary donors by name, city or blood group.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <section class="section">
+
+      <div class="container">
+
+        <div class="filter-area">
+
+          <input
+            type="text"
+            id="donor-search"
+            placeholder="Search by name, city or donor ID"
+          >
+
+          <div id="group-buttons" class="blood-buttons"></div>
+
+        </div>
+
+
+        <div class="table-container">
+
+          <table>
+
+            <thead>
+
+              <tr>
+                <th>Donor ID</th>
+                <th>Name</th>
+                <th>Group</th>
+                <th>City</th>
+                <th>Last Donation</th>
+                <th>Donations</th>
+                <th>Status</th>
+              </tr>
+
+            </thead>
+
+            <tbody id="donor-table"></tbody>
+
+          </table>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= DONATE ================= -->
+
+  <main id="donate" class="page hidden">
+
+    <section class="page-header">
+
+      <div class="container">
+
+        <p class="eyebrow">GIVE BLOOD</p>
+
+        <h1>Become a donor</h1>
+
+        <p>
+          Register as a voluntary donor and help someone in need.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <section class="section">
+
+      <div class="container two-column">
+
+        <div class="card">
+
+          <h2>Donor registration</h2>
+
+          <p class="muted">
+            Fields marked with * are required.
+          </p>
+
+
+          <form id="donor-form">
+
+            <div class="form-grid">
+
+              <div class="form-group">
+
+                <label>Full name *</label>
+
+                <input
+                  type="text"
+                  required
+                  placeholder="Chenna Neeraj"
+                >
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label>Age *</label>
+
+                <input
+                  type="number"
+                  min="18"
+                  max="65"
+                  required
+                  placeholder="21"
+                >
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label>Mobile number *</label>
+
+                <input
+                  type="tel"
+                  required
+                  placeholder="+91 98490 00112"
+                >
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label>Email</label>
+
+                <input
+                  type="email"
+                  placeholder="you@example.com"
+                >
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label>Blood group *</label>
+
+                <select id="donor-group" required>
+
+                  <option value="">Select group</option>
+
+                  <option>A+</option>
+                  <option>A-</option>
+                  <option>B+</option>
+                  <option>B-</option>
+                  <option>AB+</option>
+                  <option>AB-</option>
+                  <option>O+</option>
+                  <option>O-</option>
+
+                </select>
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label>City *</label>
+
+                <input
+                  type="text"
+                  required
+                  placeholder="Vijayawada"
+                >
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label>Last donation date</label>
+
+                <input type="date">
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label>Preferred donation date</label>
+
+                <input type="date">
+
+              </div>
+
+
+              <div class="form-group full">
+
+                <label>Medical notes</label>
+
+                <textarea
+                  rows="4"
+                  placeholder="Any medication, recent illness or allergies"
+                ></textarea>
+
+              </div>
+
+
+              <button
+                type="submit"
+                class="btn btn-primary full"
+              >
+                ❤️ Register as donor
+              </button>
+
+            </div>
+
+          </form>
+
+        </div>
+
+
+        <div class="side-content">
+
+          <div class="card">
+
+            <h3>You can donate if</h3>
+
+            <ul class="check-list">
+
+              <li>✓ Age between 18 and 65 years</li>
+              <li>✓ Body weight above 50 kg</li>
+              <li>✓ Haemoglobin of 12.5 g/dL or more</li>
+              <li>✓ At least 90 days since your last donation</li>
+
+            </ul>
+
+          </div>
+
+
+          <div class="card">
+
+            <h3>Please wait if</h3>
+
+            <ul class="warning-list">
+
+              <li>✕ Fever, cold or infection recently</li>
+              <li>✕ Pregnancy or breastfeeding</li>
+              <li>✕ Recent tattoo or piercing</li>
+              <li>✕ Certain uncontrolled medical conditions</li>
+
+            </ul>
+
+          </div>
+
+
+          <div class="card">
+
+            <h3>Before you come</h3>
+
+            <p>
+              Eat a proper meal, drink enough water, sleep well
+              the night before and carry a government photo ID.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="footer">
+
+    <div class="container footer-grid">
+
+      <div>
+
+        <div class="logo">
+          <span class="logo-icon">♥</span>
+          Neeraj Blood Bank
+        </div>
+
+        <p>
+          A community blood bank management system connecting
+          voluntary donors with patients in need.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>Quick Links</h3>
+
+        <a href="#" onclick="showPage('about')">About Us</a>
+        <a href="#" onclick="showPage('availability')">Blood Stock</a>
+        <a href="#" onclick="showPage('donors')">Donor Directory</a>
+        <a href="#" onclick="showPage('donate')">Become a Donor</a>
+
+      </div>
+
+
+      <div>
+
+        <h3>Reach Us</h3>
+
+        <p>📍 Plot 14, Hospital Road, Vijayawada</p>
+        <p>📞 +91 98490 00112</p>
+        <p>✉ help@neerajbloodbank.in</p>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      © <span id="year"></span>
+      Neeraj Blood Bank.
+      Student project — Blood Bank Management System.
+
+    </div>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+  <div class="team-image-card">
+    <img
+        src="neeraj.jpeg"
+        alt="Founder of Neeraj Blood Bank"
+        class="team-photo"
+    >
+</div>
+
+</body>
+</html>
